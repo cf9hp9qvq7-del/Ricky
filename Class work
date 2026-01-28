@@ -1,1 +1,17 @@
+// This program keeps asking the user for a password until "admin" is entered.
+import java.util.Scanner;
 
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        String password = "";
+
+        while (!password.equals("admin")) {
+            System.out.print("Enter password: ");
+            password = input.nextLine();
+        }
+
+        System.out.println("Access granted.");
+    }
+}
